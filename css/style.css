@@ -1,0 +1,108 @@
+.main-header {
+    text-align: center;
+}
+
+.milih-bangun-datar {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-botton {
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+}
+.tombolSegitiga:hover {
+    background-color: rgb(6, 188, 244);
+    color: aliceblue;
+
+}
+
+.tombolJajarGenjang:hover {
+    background-color: rgb(6, 188, 244);
+    color: aliceblue;
+}
+
+.pengisian-data {
+    display: flex;
+}
+
+.pengisian-data aside {
+    width: 100%;
+}
+
+.content-header {
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(123, 196, 218);
+}
+
+.fotoRumus-border {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.fotoRumus {
+    height: 400px;
+    width: 680px;
+    background-image: url(https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga.png);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.header-rumus-luas {
+    display: flex;
+    flex-direction: column;
+}
+
+.rumus-luas {
+    border: 1px solid;
+    text-align: center;
+    height: 25px;
+    width: 180px;
+    margin-inline: auto;
+    padding-top: 4px;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.input-angka {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.input-tinggi {
+    width: 78%;
+}
+
+.input-alas {
+    width: 78%;
+}
+
+.button-akhir {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-hitung {
+    background-color: rgb(123, 196, 218);
+    width: 55px;
+    align-self: center;
+    border: none;
+}
+
+.button-reset {
+    
+    background-color: orange;
+    width: 55px;
+    align-self: flex-end;
+    border: none;
+}
