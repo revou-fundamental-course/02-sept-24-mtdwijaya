@@ -106,3 +106,19 @@
     align-self: flex-end;
     border: none;
 }
+
+/* CSS JAJAR GENJANG */
+
+.fotoRumusJajarGenjang-border {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.fotoRumusJajarGenjang {
+    height: 269px;
+    width: 576px;
+    background-image: url(https://rumusdasar.com/wp-content/uploads/2017/08/rumus-jajar-genjang-matematika-lengkap.jpg);
+    background-size: initial;
+    background-position: center;
+    align-self: center;
+}
