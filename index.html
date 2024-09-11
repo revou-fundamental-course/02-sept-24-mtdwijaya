@@ -1,9 +1,8 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <title>Tugas RevoU</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
     </head>
     <body>
         <!-- HEADER -->
@@ -62,11 +61,11 @@
                         <P id="result">Hasil Perhitungan : </P>
                     
                         <div class="button-akhir">
-                            <button class="button-hitung">Hitung</button> <br>  
+                            <button id="button_hitung" onclick="luas()">Hitung</button> <br>  
                         </div><br><br>
                         
                         <div class="button-akhir">
-                            <button class="button-reset">Reset</button>
+                            <button id="button_reset">Reset</button>
                         </div>
                      
                     </form> 
@@ -106,14 +105,14 @@
                             <input class="input-tinggi" id="tinggi" type="number">
                         </div>
                          
-                        <P id="result">Hasil Perhitungan : </P>
+                        <P>Hasil Perhitungan : <span id="luas"></span> </P>
                     
                         <div class="button-akhir">
-                            <button class="button-hitung">Hitung</button> <br>  
+                            <button id="button_hitung">Hitung</button> <br>  
                         </div><br><br>
                         
                         <div class="button-akhir">
-                            <button class="button-reset">Reset</button>
+                            <button id="button_reset">Reset</button>
                         </div>
                      
                     </form> 

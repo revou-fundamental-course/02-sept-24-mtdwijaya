@@ -92,14 +92,14 @@
     flex-direction: column;
 }
 
-.button-hitung {
+#button_hitung {
     background-color: rgb(123, 196, 218);
     width: 55px;
     align-self: center;
     border: none;
 }
 
-.button-reset {
+#button_reset {
     
     background-color: orange;
     width: 55px;
