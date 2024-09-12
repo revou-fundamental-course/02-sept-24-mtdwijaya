@@ -1,37 +1,52 @@
+/* KESELURUHAN */
+body {
+    background-color: rgba(184, 184, 184, 0.228);
+}
+
 .main-header {
     text-align: center;
 }
 
+/* PEMILIHAN BANGUN DATAR */
 .milih-bangun-datar {
     display: flex;
     flex-direction: column;
 }
 
+/* BUTTON MILIH BANGUN DATAR */
 .selection-botton {
     height: 32px;
     border: none;
     border-radius: 5px;
 }
+
+
+/* BUTTON SEGITIGA - MILIH BANGUN DATAR */
 .tombolSegitiga:hover {
     background-color: rgb(6, 188, 244);
     color: aliceblue;
 
 }
 
+/* BUTTON JAJAR GENJANG - MILIH BANGUN DATAR */
 .tombolJajarGenjang:hover {
     background-color: rgb(6, 188, 244);
     color: aliceblue;
 }
 
+/*  */
 .pengisian-data {
     display: flex;
 }
 
+/*  */
 .pengisian-data aside {
     width: 100%;
 }
 
+/* TULISAN LUAS DAN KELILING SEGITIGA- HEADER */
 .content-header {
+    margin-right: 5px;
     color: rgb(0, 0, 0);
     padding-top: 30px;
     padding-bottom: 30px;
@@ -41,11 +56,15 @@
     background-color: rgb(123, 196, 218);
 }
 
+/* FOTO RUMUS - BORDER */
 .fotoRumus-border {
     display: flex;
     flex-direction: column;
     border: none;
+    padding-top: 20px;
 }
+
+/* FOTO RUMUS SEGITIGA */
 .fotoRumus {
     height: 400px;
     width: 680px;
@@ -53,13 +72,17 @@
     background-size: cover;
     background-position: center;
     align-self: center;
+    border: 1px white;
+    border-radius: 20px;
 }
 
+/* HEADER - RUMUS LUAS DAN KELILING SEGITIGA */
 .header-rumus-luas {
     display: flex;
     flex-direction: column;
 }
 
+/* RUMUS LUAS DAN KELILING SEGITIGA */
 .rumus-luas {
     border: 1px solid;
     text-align: center;
@@ -69,29 +92,35 @@
     padding-top: 4px;
 }
 
+/*  */
 .form-header {
     text-align: center;
 }
 
+/* FORM INPUT ANGKA */
 .input-angka {
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
 
+/* FORM INPUT TINGGI SG */
 .input-tinggi {
     width: 78%;
 }
 
+/* FORM INPUT ALAS SG */
 .input-alas {
     width: 78%;
 }
 
+/* BUTTON SET */
 .button-akhir {
     display: flex;
     flex-direction: column;
 }
 
+/* BUTTON HITUNG SG */
 #button_hitung {
     background-color: rgb(123, 196, 218);
     width: 55px;
@@ -99,26 +128,25 @@
     border: none;
 }
 
+/* BUTTON RESET */
 #button_reset {
     
     background-color: orange;
     width: 55px;
-    align-self: flex-end;
-    border: none;
-}
-
-/* CSS JAJAR GENJANG */
-
-.fotoRumusJajarGenjang-border {
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
-.fotoRumusJajarGenjang {
-    height: 269px;
-    width: 576px;
-    background-image: url(https://rumusdasar.com/wp-content/uploads/2017/08/rumus-jajar-genjang-matematika-lengkap.jpg);
-    background-size: initial;
-    background-position: center;
     align-self: center;
+    border: none;
+}
+
+
+/* FORM INPUT */
+.input-sisi-pertama {
+    width: 78%;
+}
+
+.input-sisi-kedua {
+    width: 78%;
+}
+
+.input-sisi-ketiga {
+    width: 78%;
 }

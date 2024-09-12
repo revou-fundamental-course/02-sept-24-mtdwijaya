@@ -2,7 +2,7 @@
     <head>
         <title>Tugas RevoU</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
+        
     </head>
     <body>
         <!-- HEADER -->
@@ -16,8 +16,8 @@
           <main>
             <!-- PEMILIHAN BANGUN DATAR -->
             <section class="milih-bangun-datar">
-                <button href="#" type="button" class="selection-botton tombolSegitiga">Segitiga</button>
-                <button href="#"  type="button"  class="selection-botton tombolJajarGenjang">Jajar Genjang</button>
+                <button href="#segitiga" type="button" class="selection-botton tombolSegitiga">Segitiga</button>
+                <button href="#jajarGenjang"  type="button"  class="selection-botton tombolJajarGenjang">Jajar Genjang</button>
             </section>
 
             <!-- TULISAN  BANGUN DATAR-->
@@ -28,10 +28,9 @@
                         <h2>LUAS SEGITIGA</h2>
                     </header>
     
-                 <!-- FOTO RUMUS -->
-                    <article class="fotoRumus-border">
+                 <!-- FOTO RUMUS SEGITIGA -->
+                <article class="fotoRumus-border">
                         <div class="fotoRumus"><img src="" alt=""></div>
-                    </article>
     
                     <header class="header-rumus-luas">
                         <h3>Rumus Luas Segitiga Yaitu : </h3>
@@ -40,9 +39,10 @@
                     <p>Keterang : </p>
                     <p>a = alas</p>
                     <p>t = Tinggi</p>
-                    <p>s = sisi</p> <br><hr><br>
+                    <p>s = sisi</p> <br><br>
+                </article>
         
-                    <!-- FORM PENGISIAN DATA -->
+                    <!-- FORM PENGISIAN DATA LUAS SEGITGA -->
                     <form>
                         <header class="form-header">
                             <h2>HITUNG LUAS SEGITIGA</h2>
@@ -50,18 +50,20 @@
                          
                         <div class="input-angka">
                             <label for="alas">Alas (s) :</label>
-                            <input class="input-alas" id="alas" type="number">
+                            <input class="input-alas" id="alas-sg" type="number">
+                            <small class="error" id="error1"></small>
                         </div> <br>      
     
                         <div class="input-angka">
                             <label for="tinggi">Tinggi (t):</label>
-                            <input class="input-tinggi" id="tinggi" type="number">
+                            <input class="input-tinggi" id="tinggi-sg" type="number">
+                            <small class="error" id="error2"></small>
                         </div>
                          
-                        <P id="result">Hasil Perhitungan : </P>
+                        <P id="result-luas-sg">Hasil Perhitungan : </P>
                     
                         <div class="button-akhir">
-                            <button id="button_hitung" onclick="luas()">Hitung</button> <br>  
+                            <button type="button" id="button_hitung" onclick="luassgt()">Hitung</button> <br>  
                         </div><br><br>
                         
                         <div class="button-akhir">
@@ -71,44 +73,52 @@
                     </form> 
                 </aside>
                 
+                <!-- KELILING SEGITIGA -->
                 <aside>
                     <header class="content-header">
-                        <h2>LUAS JAJAR GENJANG</h2>
+                        <h2>KELILING SEGITIGA</h2>
                     </header>
     
-                 <!-- FOTO RUMUS -->
-                    <article class="fotoRumusJajarGenjang-border">
-                        <div class="fotoRumusJajarGenjang"><img src="" alt=""></div>
-                    </article><br><br><br><br><br><br>
+                 <!-- FOTO RUMUS - KELILING SEGITIGA -->
+                    <article class="fotoRumus-border">
+                        <div class="fotoRumus"><img src="" alt=""></div>
+                    </article><br><br>
     
                     <header class="header-rumus-luas">
-                        <h3>Rumus Luas Jajar Genjang Yaitu : </h3>
-                        <h4 class="rumus-luas">L = a x t</h4>
+                        <h3>Rumus Keliling Segitiga Yaitu : </h3>
+                        <h4 class="rumus-luas">K = s1 + s2 + s3</h4>
                     </header>
                     <p>Keterang : </p>
-                    <p>a = alas</p>
-                    <p>t = Tinggi</p><br><br><br><hr><br>
+                    <p>s1 = sisi 1</p>
+                    <p>s2 = sisi 2</p>
+                    <p>s3 = sisi 3</p>
+                    <br><br>
         
-                    <!-- FORM PENGISIAN DATA -->
+                    <!-- FORM PENGISIAN DATA KELILING SEGITIGA -->
                     <form>
                         <header class="form-header">
-                            <h2>HITUNG LUAS JAJAR GENJANG</h2>
+                            <h2>HITUNG KELILING SEGITIGA</h2>
                         </header> <br>
                          
                         <div class="input-angka">
-                            <label for="alas">Alas (s) :</label>
-                            <input class="input-alas" id="alas" type="number">
-                        </div> <br>      
+                            <label for="sisi-pertama">Sisi Pertama :</label>
+                            <input class="input-sisi-pertama" id="sisi-pertama" type="number">
+                        </div> <br>   
     
                         <div class="input-angka">
-                            <label for="tinggi">Tinggi (t):</label>
-                            <input class="input-tinggi" id="tinggi" type="number">
+                            <label for="sisi-kedua">Sisi Kedua :</label>
+                            <input class="input-sisi-kedua" id="sisi-kedua" type="number">
+                        </div> <br>
+                        
+                        <div class="input-angka">
+                            <label for="sisi-ketiga">Sisi Ketiga :</label>
+                            <input class="input-sisi-ketiga" id="sisi-ketiga" type="number">
                         </div>
                          
-                        <P>Hasil Perhitungan : <span id="luas"></span> </P>
+                        <P id="result-keliling-sg">Hasil Perhitungan : <span id="keliling_sg"></span> </P>
                     
                         <div class="button-akhir">
-                            <button id="button_hitung">Hitung</button> <br>  
+                            <button type="button" onclick="kelilingsg()" id="button_hitung">Hitung</button> <br>  
                         </div><br><br>
                         
                         <div class="button-akhir">
@@ -121,5 +131,6 @@
             
          
           </main>
-    </body>
+          <script src="js/script.js"></script>
+        </body>
 </html>
