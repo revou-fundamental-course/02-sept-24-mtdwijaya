@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tugas RevoU</title>
         <link rel="stylesheet" href="css/style.css">
         
@@ -22,7 +24,7 @@
 
             <!-- TULISAN  BANGUN DATAR-->
             
-            <section class="pengisian-data">
+            <section class="pengisian-data" id="main-content">
                 <aside>
                     <header class="content-header">
                         <h2>LUAS SEGITIGA</h2>
@@ -51,19 +53,17 @@
                         <div class="input-angka">
                             <label for="alas">Alas (s) :</label>
                             <input class="input-alas" id="alas-sg" type="number">
-                            <small class="error" id="error1"></small>
                         </div> <br>      
     
                         <div class="input-angka">
                             <label for="tinggi">Tinggi (t):</label>
                             <input class="input-tinggi" id="tinggi-sg" type="number">
-                            <small class="error" id="error2"></small>
                         </div>
                          
                         <P id="result-luas-sg">Hasil Perhitungan : </P>
                     
                         <div class="button-akhir">
-                            <button type="button" id="button_hitung" onclick="luassgt()">Hitung</button> <br>  
+                            <button type="button" id="button_hitung" onclick="luassg()">Hitung</button> <br>  
                         </div><br><br>
                         
                         <div class="button-akhir">
@@ -128,6 +128,114 @@
                     </form> 
                 </aside>
             </section>
+
+            <!-- JAJAR GENJANG -->
+             <section  class="pengisian-data2" id="main-content2">
+                
+                <!-- LUAS JAJAR GENJANG -->
+                <aside>
+                    <!-- header luas jajar genjang -->
+                 <header class="header-tulisan-jajargenjang">
+                    <h2>LUAS JAJAR GENJANG</h2>
+                 </header>
+
+                 <!-- RUMUS LUAS JAJAR GENJANG -->
+                  <article class="foto-jajargenjang-border">
+                    <div class="foto-jajargenjang"></div>
+                  </article>
+
+                  <!-- RUMUS LUAS JAJAR GENJANG -->
+                  <header class="header-rumus-luasJG">
+                    <h3>Rumus Luas Jajar Genjang Yaitu : </h3>
+                    <h4 class="rumus-luasJG">L = a x t</h4>
+                </header>
+                <p>Keterang : </p>
+                <p>a = Alas</p>
+                <p>t = Tinggi</p>
+                <br><br><br><br><br><br>
+
+                <!-- FORM LUAS JAJAR GENJANG -->
+                <form>
+                    <header class="form-header">
+                        <h2>HITUNG LUAS JAJAR GENJANG</h2>
+                    </header> <br>
+                     
+                    <div class="input-angka">
+                        <label for="alas">Alas (a) :</label>
+                        <input class="input-alas" id="alas-jg" type="number">
+                    </div> <br>      
+
+                    <div class="input-angka">
+                        <label for="tinggi">Tinggi (t):</label>
+                        <input class="input-tinggi" id="tinggi-jg" type="number">
+                    </div>
+                     
+                    <P id="result-luas-jg">Hasil Perhitungan : </P>
+                
+                    <div class="button-akhir">
+                        <button type="button" id="button_hitung" onclick="luasJajarGenjang()">Hitung</button> <br>  
+                    </div><br><br>
+                    
+                    <div class="button-akhir">
+                        <button id="button_reset">Reset</button>
+                    </div>
+                 
+                </form> 
+
+
+                </aside>
+
+                <!-- KELILING JAJAR GENJANG -->
+                <aside>                 
+                    <header class="header-tulisan-jajargenjang">
+                    <h2>KELILING JAJAR GENJANG</h2>
+                 </header>
+
+                 <!-- RUMUS LUAS JAJAR GENJANG -->
+                  <article class="foto-jajargenjang-border">
+                    <div class="foto-jajargenjang"></div>
+                  </article>
+
+                  <!-- RUMUS KELILING JG -->
+                  <header class="header-rumus-luasJG">
+                    <h3>Rumus Keliling Jajar Genjang Yaitu : </h3>
+                    <h4 class="rumus-luasJG">K = 2 (Alas + Sisi Miring)</h4>
+
+                    <p>Keterang : </p>
+                    <p>a = Alas</p>
+                    <p>t = Tinggi</p>
+                    <p>Sisi Miring</p>
+                    <br>
+
+                    <!-- FORM INPUT KELILING JG -->
+                    <form>
+                        <header class="form-header">
+                            <h2>HITUNG KELILING JAJAR GENJANG</h2>
+                        </header> <br>
+                         
+                        <div class="input-angka">
+                            <label for="alas-keliling">Alas :</label>
+                            <input class="input-alas-keliling" id="alas-keliling" type="number">
+                        </div> <br>   
+    
+                        <div class="input-angka">
+                            <label for="tinggi-keliling">Tinggi :</label>
+                            <input class="input-tinggi-keliling" id="tinggi-keliling" type="number">
+                        </div> <br>
+                         
+                        <P id="result-keliling-jg">Hasil Perhitungan :</P>
+                    
+                        <div class="button-akhir">
+                            <button type="button" onclick="kelilingJajarGenjang()" id="button_hitung">Hitung</button> <br>  
+                        </div><br><br>
+                        
+                        <div class="button-akhir">
+                            <button id="button_reset">Reset</button>
+                        </div>
+                     
+                    </form> 
+                </aside>
+             </section>
             
          
           </main>

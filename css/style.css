@@ -40,7 +40,17 @@ body {
 }
 
 /*  */
+.pengisian-data2 {
+    display: flex;
+}
+
+/*  */
 .pengisian-data aside {
+    width: 100%;
+}
+
+/*  */
+.pengisian-data2 aside {
     width: 100%;
 }
 
@@ -150,3 +160,77 @@ body {
 .input-sisi-ketiga {
     width: 78%;
 }
+
+
+
+/* JAJAR GENJANG */
+
+/* HEADER LUAS JAJAR GENJANG */
+.header-tulisan-jajargenjang {
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(123, 196, 218);
+}
+
+/* BORDER FOTO RUMUS */
+.foto-jajargenjang-border {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding-top: 20px;
+}
+.foto-jajargenjang{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 860px;
+    background-image: url(https://awsimages.detik.net.id/community/media/visual/2021/09/20/jajar-genjang.jpeg?w=576);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    border: 1px white;
+    border-radius: 20px;
+}
+
+/* HEADER RUMUS LUAS JAJAR GENJANG */
+.header-rumus-luasJG {
+    display: flex;
+    flex-direction: column;
+}
+
+/* RUMUS LUAS DAN KELILING SEGITIGA */
+.rumus-luasJG {
+    border: 1px solid;
+    text-align: center;
+    height: 25px;
+    width: 180px;
+    margin-inline: auto;
+    padding-top: 4px;
+}
+
+/* FORM INPUT */
+.input-alas-keliling {
+    width: 78%;
+}
+
+.input-tinggi-keliling {
+    width: 78%;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 480px) {
+    #main-content {
+      display: flex;
+        flex-direction: column;
+    }
+    #main-content2 {
+        display: flex;
+      flex-direction: column;
+    }
+  }
